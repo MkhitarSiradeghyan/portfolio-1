@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body class="font-[Lato] bg-neutral-900">
-    <header class="py-6 whitespace-nowrap">
+    <header class="fixed w-screen py-6 whitespace-nowrap">
       <div
         class="container mx-auto max-w-7xl px-6 flex items-center justify-between gap-15"
       >
@@ -53,43 +53,41 @@
       </div>
     </header>
     <main>
-      <section>
-        <div class="container px-6 max-w-7xl mx-auto">
-          <div class="">
-            <h1 class="">Hi, I am</h1>
-            <h2 class="">Mkhitar Siradeghyan</h2>
-            <h3 class="">Frontend Developer</h3>
-            <div class="">
+      <section class="h-screen">
+        <div class="container px-6 max-w-7xl mx-auto h-full flex lg:justify-start justify-between relative">
+          <div class="inline-flex flex-col gap-6 justify-center items-center lg:items-start h-full">
+            <h3 class="text-center lg:text-left font-semibold text-base md:text-2xl text-neutral-600 tracking-wide">Hi, I am</h3>
+            <h2 class="text-center lg:text-left font-bold text-lg md:text-3xl text-neutral-400 tracking-wide">Mkhitar Siradeghyan</h2>
+            <h1 class="text-center lg:text-left font-black text-5xl md:text-7xl bg-linear-to-r from-[var(--c-theme-dark)] via-[var(--c-theme-light)] to-[var(--c-theme-dark)] leading-[1.2] bg-clip-text text-transparent tracking-wide inline-block">Frontend Developer</h1>
+            <div class="*:border *:border-neutral-600 inline-flex gap-4 *:w-10 *:h-10 *:block *:rounded-full *:inline-flex *:justify-center *:items-center *:bg-white/4 *:text-neutral-400 text-xl">
               <a href="" class=""><i class="fa-brands fa-instagram"></i></a>
               <a href="" class=""><i class="fa-brands fa-github"></i></a>
-              <a href="" class=""><i class="fa-brands fa-dribbble"></i></a>
-              <a href="" class=""><i class="fa-brands fa-behance"></i></a>
               <a href="" class=""><i class="fa-brands fa-youtube"></i></a>
               <a href="" class=""><i class="fa-brands fa-telegram"></i></a>
             </div>
-            <div class="">
-                <button class="">Hire me</button>
-                <button class="">Download CV</button>
+            <div class="*:whitespace-nowrap *:px-6 md:*:px-10 md:*:py-3 *:py-2 *:text-sm md:*:text-base *:rounded-lg *:border-2 *:cursor-pointer inline-flex gap-4">
+              <button class="bg-[var(--c-theme-light)] text-white border-[var(--c-theme-light)]">Hire me</button>
+              <button class="text-neutral-400 border-neutral-400">Download CV</button>
             </div>
-            <div class="">
+            <div class="bg-white/4 inline-grid grid-cols-3 text-center md:text-left py-3 md:py-6 *:px-2 md:*:px-8 *:text-neutral-400 *:flex *:flex-col *:justify-start *:gap-2 *:text-sm md:*:text-xl rounded-lg">
                 <div class="">
-                    <span>5+</span>
+                    <span class="text-[var(--c-theme-light)] text-lg md:text-3xl font-extrabold tracking-wide">5+</span>
                     <span>Experiences</span>
                 </div>
                 <div class="">
-                    <span>20+</span>
+                    <span class="text-[var(--c-theme-light)] text-lg md:text-3xl font-extrabold tracking-wide">20+</span>
                     <span>Project Done</span>
                 </div>
                 <div class="">
-                    <span>80+</span>
+                    <span class="text-[var(--c-theme-light)] text-lg md:text-3xl font-extrabold tracking-wide">80+</span>
                     <span>Happy Clients</span>
                 </div>
             </div>
           </div>
-          <div class="">
-            <div class="">
-                <div class=""></div>
-                <img src="" alt="">
+          <div class="hidden lg:block absolute right-0 h-full -z-1">
+            <div class="overflow-hidden aspect-[3/4] h-8/10 relative rounded-full absolute right-0">
+                <div class="bg-white/4 w-full aspect-square absolute rounded-full bottom-0"></div>
+                <img class="h-9/10 absolute bottom-0 left-1/2 -translate-x-1/2" src="./assets/img/profile.png" alt="">
             </div>
           </div>
         </div>
